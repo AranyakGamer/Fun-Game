@@ -1,0 +1,117 @@
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 50px;}
+  }
+  @keyframes myothermove {
+    from {right: 0px;}
+    to {right: 50px;}
+  }
+  @keyframes mylastmove {
+    from {color: rgb(0, 0, 0);}
+    to {color: rgb(182, 179, 179);}
+  }
+body{
+    background: radial-gradient(#252525, #030303); 
+    height: max-content ; 
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+} 
+#Main_compartment{ 
+    align-self: left;
+   background-color: black; 
+ width: 400px;  
+ opacity:25%;
+ border-radius: 25px;   
+
+} 
+#sub_compartment{ 
+      opacity: 100%;
+     }
+
+img{
+    opacity: initial;
+
+}
+ #Header{
+    height: 50px;
+    background-color: black;
+    opacity: 0.56;
+    border-radius: 50px;    
+    animation:mylastmove 2s ; 
+    font-size: xx-large; 
+    color: azure;
+ }   
+.Animation1 
+{
+    position: relative;
+    animation: mymove 2s;
+}  
+input 
+{
+     border:solid;
+}
+button{
+  font-size: x-large; 
+  color:white ; 
+  border-style: dashed;
+  opacity: 0.5;
+}
+
+p{
+  align-self: left;
+  background-color: black;
+opacity: 45%; 
+width: 400px; 
+border-radius: 15px;  
+color:beige
+} 
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
